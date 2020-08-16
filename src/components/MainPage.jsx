@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Image, Container } from "react-bootstrap";
 import Education from "./Education";
 import Projects from "./Projects";
@@ -8,6 +8,12 @@ const MainPage = (props) => {
   const [imgClicked, setImgClicked] = useState(false);
   const [navSelected, setSelectedNav] = useState("");
   const [day, setDay] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setImgClicked(true);
+    }, 500);
+  }, []);
 
   return (
     <>
@@ -19,7 +25,13 @@ const MainPage = (props) => {
           />
           <p>
             Hi there. My name is{" "}
-            <span onClick={() => setImgClicked(!imgClicked)}>Klevin</span>.{" "}
+            <span
+              className={imgClicked ? "selected" : ""}
+              onClick={() => setImgClicked(!imgClicked)}
+            >
+              Klevin
+            </span>
+            .{" "}
             {imgClicked && (
               <>
                 <Image width='200px' height='200px' src='./assets/klevin.png' />
