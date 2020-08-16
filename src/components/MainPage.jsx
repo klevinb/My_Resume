@@ -12,7 +12,7 @@ const MainPage = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setImgClicked(true);
-    }, 500);
+    }, 1500);
   }, []);
 
   return (
