@@ -17,7 +17,7 @@ const MainPage = (props) => {
 
   return (
     <>
-      <Container fluid className='night'>
+      <Container fluid className='night stars twinkling'>
         <div className='content'>
           <Navigation
             navSelected={navSelected}
