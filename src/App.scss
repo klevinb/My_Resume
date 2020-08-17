@@ -19,6 +19,16 @@
     max-height: 100%;
     max-width: 100%;
     overflow-y: auto;
+    .nav {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0%;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
     p {
       font-size: 1rem;
     }
@@ -28,15 +38,14 @@
     }
     p img {
       border-radius: 25px;
+      margin-bottom: 10px;
     }
     .socials {
-      position: absolute;
-      top: 0%;
-      right: 1%;
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
+      z-index: 3;
       li {
         padding: 10px;
         font-weight: 900;
@@ -83,6 +92,9 @@
     }
 
     .infoSection {
+      * {
+        z-index: 2;
+      }
       margin-top: 50px;
       .education img {
         padding: 20px;
@@ -102,10 +114,8 @@
       }
     }
     .logo_img {
-      position: absolute;
-      top: 0%;
-      left: 1%;
       height: 100px;
+      padding-left: 10px;
     }
 
     .education {
@@ -155,6 +165,9 @@
     }
   }
   .projects {
+    * {
+      z-index: 2;
+    }
     .projectDetails {
       ul {
         display: inline;
