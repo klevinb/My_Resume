@@ -27,12 +27,14 @@ function SingleProject(props) {
             >
               Desktop view
             </li>
-            <li
-              className={selected === "Mobile view" ? "selected" : ""}
-              onClick={() => setSelected("Mobile view")}
-            >
-              Mobile view
-            </li>
+            {props.photos[0].mobileView.length > 0 && (
+              <li
+                className={selected === "Mobile view" ? "selected" : ""}
+                onClick={() => setSelected("Mobile view")}
+              >
+                Mobile view
+              </li>
+            )}
           </ul>
         </div>
         <Carousel>

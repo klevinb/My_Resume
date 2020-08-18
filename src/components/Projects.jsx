@@ -6,35 +6,10 @@ function Projects() {
     <>
       <div className='projects'>
         <SingleProject
-          title='LinkedIn Mockup'
-          description='This was a team project, we used React, Node, Express, MongoDB. 
-          For the Backend we created endpoints for Posts, Photos, Experiences (CSV), CV (PDF), log in - sign up pages.
-          We used JSON Web Token and socket.io for the chatrooms.'
-          repoLink='https://github.com/klevinb/LinkedinBackend_TBW_FE'
-          tools=''
-          photos={[
-            {
-              title: "User Page",
-              desktopView: "/assets/LinkedInApp/UsersPage.png",
-              mobileView: "/assets/LinkedInApp/WorkInProgress.png",
-            },
-            {
-              title: "LinkedIn User",
-              desktopView: "/assets/LinkedInApp/OtherUserPage.png",
-              mobileView: "/assets/LinkedInApp/WorkInProgress.png",
-            },
-            {
-              title: "Feeds Page",
-              desktopView: "/assets/LinkedInApp/FeedsPage.png",
-              mobileView: "/assets/LinkedInApp/WorkInProgress.png",
-            },
-          ]}
-        />
-        <SingleProject
           title='Spotify App Mockup'
           description='I created a mockup for the Spotify website using React, Redux,
-        Bootstrap and later I will implement the login page, and then I will
-        use MongoDB to store the data.'
+Bootstrap and later I will implement the login page, and then I will
+use MongoDB to store the data.'
           repoLink='https://github.com/klevinb/CV-Project/tree/master/spotify_alone'
           tools='API : Deezer - RapidAPI.'
           photos={[
@@ -57,6 +32,31 @@ function Projects() {
               title: "Search Page",
               desktopView: "/assets/SpotifyApp/Search_page.jpg",
               mobileView: "/assets/SpotifyApp/Search_page_mobile.png",
+            },
+          ]}
+        />
+        <SingleProject
+          title='LinkedIn Mockup'
+          description='This was a team project, we used React, Node, Express, MongoDB. 
+          For the Backend we created endpoints for Posts, Photos, Experiences (CSV), CV (PDF), log in - sign up pages.
+          We used JSON Web Token and socket.io for the chatrooms.'
+          repoLink='https://github.com/klevinb/LinkedinBackend_TBW_FE'
+          tools=''
+          photos={[
+            {
+              title: "User Page",
+              desktopView: "/assets/LinkedInApp/UsersPage.png",
+              mobileView: "",
+            },
+            {
+              title: "LinkedIn User",
+              desktopView: "/assets/LinkedInApp/OtherUserPage.png",
+              mobileView: "",
+            },
+            {
+              title: "Feeds Page",
+              desktopView: "/assets/LinkedInApp/FeedsPage.png",
+              mobileView: "",
             },
           ]}
         />

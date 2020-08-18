@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Image, Container } from "react-bootstrap";
 import Education from "./Education";
-import Projects from "./Projects";
-import Navigation from "./Navigation";
+import { Projects, Navigation, Contacts } from "../components";
 
 const MainPage = (props) => {
   const [imgClicked, setImgClicked] = useState(false);
@@ -45,6 +44,7 @@ const MainPage = (props) => {
             {navSelected === "Education" && <Education />}
 
             {navSelected === "Projects" && <Projects />}
+            {navSelected === "Contacts" && <Contacts />}
           </div>
         </div>
         <div className='dayToggle'>
