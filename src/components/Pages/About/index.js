@@ -23,8 +23,9 @@ export default function About() {
               </a>
             </Col>
             <Col sm={12} md={6} lg={8}>
-              <span className={styles.Wave}>👋</span>
-              <span className={styles.Title}>I'm Klevin</span>
+              <span className={styles.Title}>
+                <span className={styles.Wave}>👋</span> I'm Klevin
+              </span>
               <p>Energic and self-motivated Web Developer</p>
             </Col>
           </Row>
