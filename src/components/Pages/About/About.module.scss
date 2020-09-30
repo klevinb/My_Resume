@@ -1,0 +1,57 @@
+.About {
+  margin: 50px;
+  color: whitesmoke;
+  font-size: 40px;
+  .Row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+    object-position: 70% 30%;
+    object-fit: none;
+    border-radius: 50%;
+  }
+  .Title {
+    color: transparent;
+    font-size: 3em;
+    -webkit-text-stroke: 1px white;
+  }
+  .Wave {
+    font-size: 3em;
+    animation-name: wave-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    color: unset;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}

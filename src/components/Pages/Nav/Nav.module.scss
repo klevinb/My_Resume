@@ -1,0 +1,71 @@
+.Header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 20px;
+}
+
+.NavOptions {
+  display: flex;
+  justify-content: space-around;
+  * {
+    margin-right: 20px;
+  }
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.Neon {
+  font-family: neon;
+  color: #fb4264;
+  font-size: 35px;
+  text-shadow: 0 0 3vw #f40a35;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.Neon {
+  animation: neon 4s linear infinite;
+  -moz-animation: neon 4s linear infinite;
+  -webkit-animation: neon 4s linear infinite;
+  -o-animation: neon 4s linear infinite;
+}
+.NeonLink {
+  font-family: neon;
+  color: #ffa500;
+  font-size: 25px;
+  animation: neonLink 4s linear infinite;
+  -moz-animation: neonLink 4s linear infinite;
+  -webkit-animation: neonLink 4s linear infinite;
+  -o-animation: neonLink 4s linear infinite;
+}
+.NeonLink:hover {
+  text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 5vw #fa1c16,
+    0 0 5vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+  color: #ffa500;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 5vw #fa1c16,
+      0 0 5vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+    color: #ffa500;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+      0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+    color: #ffbd59;
+  }
+}
