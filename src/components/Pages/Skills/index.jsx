@@ -14,24 +14,25 @@ export default function Skills() {
         <Bounce left>
           <Row className={styles.Row}>
             <Col sm={12} md={6}>
-              <a
-                href='https://www.linkedin.com/in/klevinbazaiti/'
-                rel='noopener noreferrer'
-                target='_blank'
-              >
-                <Image
-                  fluid
-                  src='https://instagram.fosl4-1.fna.fbcdn.net/v/t51.2885-15/e35/40634221_454554298399748_272423315954466816_n.jpg?_nc_ht=instagram.fosl4-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=TA9P3GYq8GQAX-sEjzM&_nc_tp=18&oh=3672ae2e966899a727e10e9270eedd90&oe=5FA040EB'
-                />
-              </a>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
             </Col>
             <Col sm={12} md={6}>
               <p>
-                I'm Klevin, a web developer focused on MERN stack but always
-                ready to learn new things. Eager to work in a dynamic company to
-                consolidate my skills, getting my career to the next level.
-                Ready to relocate in another Country, if needed, I'm never
-                scared by new adventures!
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
             </Col>
           </Row>
