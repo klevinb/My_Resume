@@ -48,6 +48,37 @@ export default function Education() {
                     <p>20-07-2019</p>
                   </div>
                 </div>
+                <div className='d-flex justify-content-center'>
+                  <Accordion defaultActiveKey='0'>
+                    <Card className={styles.Card}>
+                      <Card.Header className={styles.CardHeader}>
+                        <Accordion.Toggle
+                          as={Button}
+                          variant='link'
+                          eventKey='1'
+                        >
+                          Tech Stack
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey='1'>
+                        <Card.Body className={styles.CardBody}>
+                          <ListGroup className={styles.ListGroup}>
+                            <ListGroup.Item>
+                              Programming Languages
+                            </ListGroup.Item>
+                            <ListGroup.Item>OOP</ListGroup.Item>
+                            <ListGroup.Item>Web Development</ListGroup.Item>
+                          </ListGroup>
+                          <ListGroup className={styles.ListGroup}>
+                            <ListGroup.Item>Databases</ListGroup.Item>
+                            <ListGroup.Item>Algorithms</ListGroup.Item>
+                            <ListGroup.Item>Operation Systems</ListGroup.Item>
+                          </ListGroup>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
+                </div>
               </Col>
             </Row>
           </Bounce>
