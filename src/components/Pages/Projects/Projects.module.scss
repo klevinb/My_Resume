@@ -1,14 +1,13 @@
 .Container {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   margin: 50px;
-  height: 100%;
 }
 
-.About {
+.Projects {
   padding-top: 15vh;
-  height: 100%;
   margin: 50px;
   .Heading {
     width: 100%;
@@ -18,21 +17,11 @@
     text-shadow: 0 0 2px #fff, 0 0 12px #fff, 0 0 26px #fff, 0 0 40px #0ff,
       0 0 1px #0ff, 0 0 0px #0ff, 0 0 0px #0ff, 0 0 5px #0ff;
   }
+  .SingleProject {
+    color: whitesmoke;
+  }
   img {
-    width: 70%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 25px;
-  }
-  p {
-    color: white;
-    font-size: 26px;
-  }
-  a {
-    display: flex;
-    justify-content: center;
-  }
-  .Row {
-    align-items: center;
+    height: 400px;
+    width: 400px;
   }
 }

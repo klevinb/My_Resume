@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
 import styles from './Main.module.scss';
-import About from '../About';
+import Home from '../Home';
 import Education from '../Education';
+import About from '../About';
 import Skills from '../Skills';
+import Projects from '../Projects';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default class ReactReveal extends Component {
   render() {
     return (
       <>
-        <div className={styles.Block} id='home'>
-          <About />
-        </div>
-        <div className={styles.Education} id='education'>
-          <Education />
-        </div>
+        <Home />
+        <About />
+        <Education />
+        <Skills />
+        <Projects />
 
-        <div className={styles.Block}>
-          <Skills />
-        </div>
         <div className={styles.SideSocial}>
           <div className={styles.SocialContainer}>
             <a

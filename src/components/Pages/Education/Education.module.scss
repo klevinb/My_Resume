@@ -1,10 +1,17 @@
-.Education {
-  margin: 50px;
+.Container {
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin: 50px;
+}
+
+.Education {
+  padding-top: 15vh;
+  margin-top: 0;
   flex-direction: column;
   color: whitesmoke;
   font-size: 20px;
+  height: 100%;
   .Row {
     height: 100%;
     margin-bottom: 40px !important;
