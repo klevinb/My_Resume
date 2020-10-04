@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Row, Col, Carousel, Button } from 'react-bootstrap';
 import { AiOutlineGithub } from 'react-icons/ai';
+import styles from './SingleProject.module.scss';
 
 function SingleProject(props) {
   const [selected, setSelected] = useState('Desktop view');
 
   return (
     <Row>
-      <Col sm={12} md={12} className='projectDetails'>
+      <Col sm={12} md={12} className={styles.ProjectDetails}>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
 
