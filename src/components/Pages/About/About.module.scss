@@ -36,3 +36,15 @@
     align-items: center;
   }
 }
+
+@media (max-width: 575px) {
+  .About {
+    margin: 0;
+    height: auto;
+    p {
+      padding: 50px;
+      text-align: justify;
+      letter-spacing: -1px;
+    }
+  }
+}

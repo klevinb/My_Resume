@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Row, Col, Carousel, Button } from "react-bootstrap";
-import { AiOutlineGithub } from "react-icons/ai";
+import React, { useState } from 'react';
+import { Row, Col, Carousel, Button } from 'react-bootstrap';
+import { AiOutlineGithub } from 'react-icons/ai';
 
 function SingleProject(props) {
-  const [selected, setSelected] = useState("Desktop view");
+  const [selected, setSelected] = useState('Desktop view');
 
   return (
     <Row>
       <Col sm={12} md={12} className='projectDetails'>
-        <h4>{props.title}</h4>
+        <h3>{props.title}</h3>
         <p>{props.description}</p>
 
         <p>{props.tools}</p>
@@ -22,28 +22,28 @@ function SingleProject(props) {
         <div className='d-flex justify-content-center'>
           <ul>
             <li
-              className={selected === "Desktop view" ? "selected" : ""}
-              onClick={() => setSelected("Desktop view")}
+              className={selected === 'Desktop view' ? 'selected' : ''}
+              onClick={() => setSelected('Desktop view')}
             >
               Desktop view
             </li>
             {props.photos[0].mobileView.length > 0 && (
               <li
-                className={selected === "Mobile view" ? "selected" : ""}
-                onClick={() => setSelected("Mobile view")}
+                className={selected === 'Mobile view' ? 'selected' : ''}
+                onClick={() => setSelected('Mobile view')}
               >
                 Mobile view
               </li>
             )}
           </ul>
         </div>
-        <Carousel>
+        <Carousel className='Carousel'>
           {props.photos.map((photo, key) => (
             <Carousel.Item key={key}>
               <img
                 className='d-block w-100'
                 src={
-                  selected === "Desktop view"
+                  selected === 'Desktop view'
                     ? photo.desktopView
                     : photo.mobileView
                 }

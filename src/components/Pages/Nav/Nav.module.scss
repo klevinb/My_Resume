@@ -56,6 +56,15 @@ a:hover {
   color: #ffa500;
 }
 
+.BurgerMenu {
+  font-size: 45px;
+  color: whitesmoke;
+  position: fixed;
+  top: 4%;
+  right: 6%;
+  display: none;
+}
+
 @keyframes neon {
   0%,
   100% {
@@ -67,5 +76,27 @@ a:hover {
     text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
       0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
     color: #ffbd59;
+  }
+}
+
+@media (max-width: 575px) {
+  .Header {
+    display: unset;
+  }
+  .BurgerMenu {
+    display: inline;
+  }
+  .ShowHide {
+    display: none;
+  }
+
+  .NavOptions {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 900px) {
+  .ShowHide {
+    display: block;
   }
 }

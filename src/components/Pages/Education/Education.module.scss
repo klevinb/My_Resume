@@ -63,3 +63,16 @@
   text-shadow: 0 0 2px #fff, 0 0 12px #fff, 0 0 26px #fff, 0 0 40px #0ff,
     0 0 1px #0ff, 0 0 0px #0ff, 0 0 0px #0ff, 0 0 5px #0ff;
 }
+
+@media (max-width: 575px) {
+  .Education {
+    .Row {
+      img {
+        margin-bottom: 15px;
+      }
+      .CardBody {
+        display: unset;
+      }
+    }
+  }
+}

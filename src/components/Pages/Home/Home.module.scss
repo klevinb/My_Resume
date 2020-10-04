@@ -63,3 +63,32 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .Container {
+    margin: 0;
+    padding-top: 15vh;
+  }
+  .Home {
+    margin: 0;
+    .Row {
+      a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 66%;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+      text-align: center;
+      p {
+        margin-top: 50px;
+      }
+    }
+    .Title {
+      font-size: 60px;
+    }
+  }
+}

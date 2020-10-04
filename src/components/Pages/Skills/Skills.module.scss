@@ -1,14 +1,7 @@
 .Container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  height: 100%;
-}
-
-.About {
   padding-top: 15vh;
   height: 100%;
+  width: 100%;
   margin: 50px;
   .Heading {
     width: 100%;
@@ -18,21 +11,31 @@
     text-shadow: 0 0 2px #fff, 0 0 12px #fff, 0 0 26px #fff, 0 0 40px #0ff,
       0 0 1px #0ff, 0 0 0px #0ff, 0 0 0px #0ff, 0 0 5px #0ff;
   }
-  img {
-    width: 70%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 25px;
-  }
-  p {
-    color: white;
-    font-size: 26px;
-  }
-  a {
+  .Row {
     display: flex;
     justify-content: center;
+    text-align: center;
+
+    .Col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h3 {
+      color: whitesmoke;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
   }
-  .Row {
-    align-items: center;
+}
+
+@media (max-width: 575px) {
+  .Container {
+    height: auto;
   }
 }
