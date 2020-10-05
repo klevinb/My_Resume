@@ -40,7 +40,12 @@ function SingleProject(props) {
         </div>
         <Carousel className='Carousel'>
           {props.photos.map((photo, key) => (
-            <Carousel.Item key={key}>
+            <Carousel.Item
+              key={key}
+              className={
+                selected === 'Desktop view' ? '' : `${styles.MobileView}`
+              }
+            >
               <img
                 className='d-block w-100'
                 src={

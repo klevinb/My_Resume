@@ -2,4 +2,9 @@
   .ProjectDetails {
     padding: 50px;
   }
+  .MobileView {
+    img {
+      object-fit: cover !important;
+    }
+  }
 }
