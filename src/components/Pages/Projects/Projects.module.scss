@@ -1,6 +1,7 @@
 .Container {
   padding-top: 15vh;
-  margin: 50px;
+
+  width: 100%;
   .Heading {
     width: 100%;
     height: 15vh;
@@ -9,39 +10,21 @@
     text-shadow: 0 0 2px #fff, 0 0 12px #fff, 0 0 26px #fff, 0 0 40px #0ff,
       0 0 1px #0ff, 0 0 0px #0ff, 0 0 0px #0ff, 0 0 5px #0ff;
   }
-  .SingleProject {
-    color: whitesmoke;
-    padding: 0px 100px 100px 100px;
-    h1 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 25px;
-    }
-    ul {
-      font-size: 25px;
-      list-style: none;
-      display: flex;
-      li {
-        padding: 10px;
-        cursor: pointer;
-      }
-    }
-    img {
-      object-fit: contain;
+  .Project,
+  .Project1,
+  .Project2 {
+    .SingleProject {
+      height: 500px;
+      width: 70%;
     }
   }
-  img {
-    height: 400px;
-    width: 400px;
+  .Project1 {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
 @media (max-width: 575px) {
   .Container {
-    margin: 0;
-    .SingleProject {
-      padding: 0;
-    }
   }
 }
