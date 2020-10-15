@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Carousel, Button } from 'react-bootstrap';
+import { Row, Col, Image, Button } from 'react-bootstrap';
 import { AiOutlineGithub } from 'react-icons/ai';
 import styles from './SingleProject.module.scss';
 
@@ -7,8 +7,8 @@ function SingleProject(props) {
   const [selected, setSelected] = useState('Desktop view');
 
   return (
-    <Row>
-      <Col sm={12} md={12} className={styles.ProjectDetails}>
+    <Row className={styles.ProjectDetails}>
+      <Col sm={12} md={6}>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
 
@@ -19,48 +19,8 @@ function SingleProject(props) {
           </Button>
         </a>
       </Col>
-      <Col sm={12} md={12}>
-        <div className='d-flex justify-content-center'>
-          <ul>
-            <li
-              className={selected === 'Desktop view' ? 'selected' : ''}
-              onClick={() => setSelected('Desktop view')}
-            >
-              Desktop view
-            </li>
-            {props.photos[0].mobileView.length > 0 && (
-              <li
-                className={selected === 'Mobile view' ? 'selected' : ''}
-                onClick={() => setSelected('Mobile view')}
-              >
-                Mobile view
-              </li>
-            )}
-          </ul>
-        </div>
-        <Carousel className='Carousel'>
-          {props.photos.map((photo, key) => (
-            <Carousel.Item
-              key={key}
-              className={
-                selected === 'Desktop view' ? '' : `${styles.MobileView}`
-              }
-            >
-              <img
-                className='d-block w-100'
-                src={
-                  selected === 'Desktop view'
-                    ? photo.desktopView
-                    : photo.mobileView
-                }
-                alt='First slide'
-              />
-              <Carousel.Caption>
-                <h3>{photo.title}</h3>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
-        </Carousel>
+      <Col sm={12} md={6}>
+        <Image fluid src='/assets/SpotifyApp/spotify.jpg' />
       </Col>
     </Row>
   );

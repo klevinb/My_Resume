@@ -1,3 +1,25 @@
+.ProjectDetails {
+  padding: 50px;
+  color: whitesmoke;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  ul {
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    li {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  img {
+    object-fit: contain;
+  }
+}
+
 @media (max-width: 575px) {
   .ProjectDetails {
     padding: 50px;
