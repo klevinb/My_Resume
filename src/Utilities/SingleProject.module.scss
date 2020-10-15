@@ -1,7 +1,16 @@
 .ProjectDetails {
   padding: 50px;
   color: whitesmoke;
-
+  button {
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+  }
+  button:hover {
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+  }
   h1 {
     font-size: 30px;
   }
@@ -17,6 +26,46 @@
   }
   img {
     object-fit: contain;
+    border-radius: 6px;
+  }
+  .Logo {
+    .Container {
+      position: relative;
+      img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+
+      .Middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .Button {
+        background-color: #e89600;
+        color: white;
+        padding: 12px 16px;
+        border: 0;
+        font-size: 1rem;
+        border-radius: 6px;
+      }
+    }
+    .Container:hover img {
+      opacity: 0.3;
+    }
+
+    .Container:hover .Middle {
+      opacity: 1;
+    }
   }
 }
 

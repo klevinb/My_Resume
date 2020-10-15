@@ -16,6 +16,7 @@
     .SingleProject {
       height: 500px;
       width: 70%;
+      margin: 0 100px 0 100px;
     }
   }
   .Project1 {
@@ -26,5 +27,15 @@
 
 @media (max-width: 575px) {
   .Container {
+    .Project,
+    .Project1,
+    .Project2 {
+      .SingleProject {
+        height: 500px;
+        width: 100%;
+        margin: 0;
+        height: auto;
+      }
+    }
   }
 }
