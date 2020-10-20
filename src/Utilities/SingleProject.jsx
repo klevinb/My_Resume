@@ -46,30 +46,34 @@ function SingleProject(props) {
           <div className={styles.Container}>
             <Image fluid src={props.logo} />
             <div className={styles.Middle}>
-              <button className={styles.Button}>View Photos</button>
+              <button className={styles.Button} onClick={() => setShow(true)}>
+                View Photos
+              </button>
             </div>
           </div>
         </Col>
       </Row>
-      <Modal show={show} onHide={() => setShow(false)}>
+      <Modal
+        show={show}
+        centered='true'
+        size='lg'
+        onHide={() => setShow(false)}
+      >
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>
+            <ol>
+              <li>Mobile View</li>
+              <li>Desktop View</li>
+            </ol>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Carousel>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src='holder.js/800x400?text=First slide&bg=373940'
-                alt='First slide'
-              />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
+            {props.photos.map((photo) => (
+              <Carousel.Item>
+                <img className='d-block w-100' src={photo.desktopView} />
+              </Carousel.Item>
+            ))}
           </Carousel>
         </Modal.Body>
       </Modal>
