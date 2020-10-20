@@ -60,7 +60,7 @@ function SingleProject(props) {
         onHide={() => setShow(false)}
       >
         <Modal.Header closeButton>
-          <Modal.Title>
+          <Modal.Title className={styles.ModalListOption}>
             <ol>
               <li>Mobile View</li>
               <li>Desktop View</li>
