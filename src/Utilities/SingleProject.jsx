@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Image, Button, Modal } from 'react-bootstrap';
+import { Row, Col, Image, Button, Modal, Carousel } from 'react-bootstrap';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { GrHeroku } from 'react-icons/gr';
 import styles from './SingleProject.module.scss';
@@ -55,15 +55,23 @@ function SingleProject(props) {
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant='secondary' onClick={() => setShow(false)}>
-            Close
-          </Button>
-          <Button variant='primary' onClick={() => setShow(false)}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <Modal.Body>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src='holder.js/800x400?text=First slide&bg=373940'
+                alt='First slide'
+              />
+              <Carousel.Caption>
+                <h3>First slide label</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Modal.Body>
       </Modal>
     </>
   );
