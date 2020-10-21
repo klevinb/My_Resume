@@ -8,6 +8,9 @@ export default function Projects() {
   return (
     <>
       <div className={styles.Container} id='projects'>
+        <Fade left>
+          <h1 className={styles.Heading}>Projects</h1>
+        </Fade>
         <div className={styles.Project}>
           <div className={styles.SingleProject}>
             <SingleProject
@@ -24,24 +27,24 @@ export default function Projects() {
               logo='/assets/YoloApp/yolo.png'
               photos={[
                 {
-                  title: 'Home Page',
-                  desktopView: '/assets/SpotifyApp/Home_page.jpg',
-                  mobileView: '/assets/SpotifyApp/Home_page_mobile.png',
+                  title: 'Landing Page',
+                  desktopView: '/assets/YoloApp/LandingPage.png',
+                  mobileView: '/assets/YoloApp/LandingPage_mobile.png',
                 },
                 {
                   title: 'Album Page',
-                  desktopView: '/assets/SpotifyApp/Album_page.jpg',
-                  mobileView: '/assets/SpotifyApp/Album_page_mobile.png',
+                  desktopView: '/assets/YoloApp/Profile.png',
+                  mobileView: '/assets/YoloApp/Profile_mobile.png',
                 },
                 {
                   title: 'Favorite Page',
-                  desktopView: '/assets/SpotifyApp/Favorite_page.jpg',
-                  mobileView: '/assets/SpotifyApp/Favorite_page_mobile.png',
+                  desktopView: '/assets/YoloApp/Events.png',
+                  mobileView: '/assets/YoloApp/Events_mobile.png',
                 },
                 {
                   title: 'Search Page',
-                  desktopView: '/assets/SpotifyApp/Search_page.jpg',
-                  mobileView: '/assets/SpotifyApp/Search_page_mobile.png',
+                  desktopView: '/assets/YoloApp/Posts.png',
+                  mobileView: '/assets/YoloApp/Posts_mobile.png',
                 },
               ]}
             />
@@ -102,17 +105,17 @@ use MongoDB to store the data.'
                 {
                   title: 'User Page',
                   desktopView: '/assets/LinkedInApp/UsersPage.png',
-                  mobileView: '',
+                  mobileView: '/assets/LinkedInApp/UsersPage_mobile.png',
                 },
                 {
                   title: 'LinkedIn User',
                   desktopView: '/assets/LinkedInApp/OtherUserPage.png',
-                  mobileView: '',
+                  mobileView: '/assets/LinkedInApp/OtherUserPage_mobile.png',
                 },
                 {
                   title: 'Feeds Page',
                   desktopView: '/assets/LinkedInApp/FeedsPage.png',
-                  mobileView: '',
+                  mobileView: '/assets/LinkedInApp/FeedsPage_mobile.png',
                 },
               ]}
             />

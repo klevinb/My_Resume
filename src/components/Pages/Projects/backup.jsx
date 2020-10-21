@@ -11,7 +11,40 @@ export default function Projects() {
         <Fade left>
           <h1 className={styles.Heading}>Projects</h1>
         </Fade>
-        <div className={styles.SingleProject}></div>
+        <div className={styles.SingleProject}>
+          <Bounce left>
+            <SingleProject
+              title='Spotify App Mockup'
+              description='I created a mockup for the Spotify website using React, Redux,
+            Bootstrap and later I will implement the login page, and then I will
+use MongoDB to store the data.'
+              repoLink='https://github.com/klevinb/CV-Project/tree/master/spotify_alone'
+              tools='API : Deezer - RapidAPI.'
+              photos={[
+                {
+                  title: 'Home Page',
+                  desktopView: '/assets/SpotifyApp/Home_page.jpg',
+                  mobileView: '/assets/SpotifyApp/Home_page_mobile.png',
+                },
+                {
+                  title: 'Album Page',
+                  desktopView: '/assets/SpotifyApp/Album_page.jpg',
+                  mobileView: '/assets/SpotifyApp/Album_page_mobile.png',
+                },
+                {
+                  title: 'Favorite Page',
+                  desktopView: '/assets/SpotifyApp/Favorite_page.jpg',
+                  mobileView: '/assets/SpotifyApp/Favorite_page_mobile.png',
+                },
+                {
+                  title: 'Search Page',
+                  desktopView: '/assets/SpotifyApp/Search_page.jpg',
+                  mobileView: '/assets/SpotifyApp/Search_page_mobile.png',
+                },
+              ]}
+            />
+          </Bounce>
+        </div>
         <div className={styles.SingleProject}>
           <Bounce left>
             <SingleProject

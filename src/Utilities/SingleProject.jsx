@@ -5,7 +5,7 @@ import { GrHeroku } from 'react-icons/gr';
 import styles from './SingleProject.module.scss';
 
 function SingleProject(props) {
-  const [selected, setSelected] = useState('Desktop view');
+  const [selected, setSelected] = useState('Desktop View');
   const [show, setShow] = useState(false);
 
   return (
@@ -58,20 +58,39 @@ function SingleProject(props) {
         centered='true'
         size='lg'
         onHide={() => setShow(false)}
+        className={styles.Modal}
       >
-        <Modal.Header closeButton>
+        <Modal.Header className={styles.ModalHeader} closeButton>
           <Modal.Title className={styles.ModalListOption}>
             <ol>
-              <li>Mobile View</li>
-              <li>Desktop View</li>
+              <li
+                onClick={() => setSelected('Mobile View')}
+                className={selected === 'Mobile View' ? styles.Selected : ''}
+              >
+                Mobile View
+              </li>
+              <li
+                onClick={() => setSelected('Desktop View')}
+                className={selected === 'Desktop View' ? styles.Selected : ''}
+              >
+                Desktop View
+              </li>
             </ol>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className={styles.ModalBody}>
           <Carousel>
             {props.photos.map((photo) => (
               <Carousel.Item>
-                <img className='d-block w-100' src={photo.desktopView} />
+                <img
+                  className='d-block w-100'
+                  src={
+                    selected === 'Desktop View'
+                      ? photo.desktopView
+                      : photo.mobileView
+                  }
+                  alt={selected}
+                />
               </Carousel.Item>
             ))}
           </Carousel>
