@@ -58,7 +58,7 @@ export default function Projects() {
             Bootstrap and later I will implement the login page, and then I will
 use MongoDB to store the data.'
               feLink='https://github.com/klevinb/CV-Project/tree/master/spotify_alone'
-              liveLink='https://spotifyfe.herokuapp.com'
+              liveLink='https://fakespotify.herokuapp.com/'
               beLink='https://github.com/klevinb/Spotify_Backend'
               apis='API : Deezer - RapidAPI.'
               toolsFE='Front End : React, Bootstrap'
