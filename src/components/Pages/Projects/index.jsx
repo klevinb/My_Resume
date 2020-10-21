@@ -58,7 +58,7 @@ export default function Projects() {
             Bootstrap and later I will implement the login page, and then I will
 use MongoDB to store the data.'
               feLink='https://github.com/klevinb/CV-Project/tree/master/spotify_alone'
-              liveLink=''
+              liveLink='https://spotifyfe.herokuapp.com'
               beLink='https://github.com/klevinb/Spotify_Backend'
               apis='API : Deezer - RapidAPI.'
               toolsFE='Front End : React, Bootstrap'
@@ -97,7 +97,7 @@ use MongoDB to store the data.'
           For the Backend we created endpoints for Posts, Photos, Experiences (CSV), CV (PDF), log in - sign up pages.
           We used JSON Web Token and socket.io for the chatrooms.'
               feLink='https://github.com/klevinb/LinkedinBackend_TBW_FE'
-              liveLink=''
+              liveLink='https://linkedinfakefe.herokuapp.com'
               beLink='https://github.com/klevinb/LinkedinBackend_TBW_AUTH'
               tools=''
               logo='/assets/LinkedInApp/linkedin.png'
