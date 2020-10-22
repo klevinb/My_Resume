@@ -17,10 +17,23 @@
     text-align: center;
 
     .Col {
+      margin-bottom: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      h3 {
+        font-size: 1.55rem;
+      }
+
+      img {
+        background-color: rgba(245, 245, 245, 0.885);
+        padding: 10px;
+        border-radius: 6px;
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+      }
     }
 
     h3 {
@@ -37,5 +50,16 @@
 @media (max-width: 575px) {
   .Container {
     height: auto;
+    .Row {
+      .Col {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
   }
 }
