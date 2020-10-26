@@ -57,7 +57,7 @@ export default function Projects() {
               description='I created a mockup for the Spotify website using React, Redux,
             Bootstrap and later I will implement the login page, and then I will
 use MongoDB to store the data.'
-              feLink='https://github.com/klevinb/CV-Project/tree/master/spotify_alone'
+              feLink='https://github.com/klevinb/Spotify_FE'
               liveLink='https://fakespotify.herokuapp.com/'
               beLink='https://github.com/klevinb/Spotify_Backend'
               apis='API : Deezer - RapidAPI.'
