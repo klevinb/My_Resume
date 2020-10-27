@@ -50,7 +50,7 @@ export default function Projects() {
             />
           </div>
         </div>
-        <div className={styles.Project}>
+        <div className={styles.Project1}>
           <div className={styles.SingleProject}>
             <SingleProject
               title='Spotify App Mockup'
