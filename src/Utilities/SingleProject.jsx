@@ -54,7 +54,7 @@ function SingleProject(props) {
         </Col>
       </Row>
       <Modal
-        show={show && selected}
+        show={show}
         centered='true'
         size='lg'
         onHide={() => setShow(false)}
