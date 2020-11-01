@@ -82,10 +82,7 @@ export default function Education() {
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                <Image
-                  fluid
-                  src='https://scontent.fosl4-2.fna.fbcdn.net/v/t1.0-9/106021628_677337352815317_3039720649727959783_o.png?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=RsPqzUbHG9YAX_x6nSv&_nc_ht=scontent.fosl4-2.fna&oh=1ac9a7a0b5668705955b9eaade4062af&oe=5F98FA08'
-                />
+                <Image fluid src='/assets/strive.png' />
               </a>
             </Col>
             <Col sm={12} md={6}>

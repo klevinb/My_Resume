@@ -16,11 +16,7 @@ export default function Home() {
                   rel='noopener noreferrer'
                   target='_blank'
                 >
-                  <Image
-                    fluid
-                    className={styles.Uni}
-                    src='https://instagram.fosl4-2.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/74964062_181067232942967_2311963254663365869_n.jpg?_nc_ht=instagram.fosl4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=95dcHvneqQQAX-BjhyX&_nc_tp=15&oh=3af243176f92fdd395924d7f3b46ec5b&oe=5F9F0319'
-                  />
+                  <Image fluid className={styles.Uni} src='/assets/about.jpg' />
                 </a>
               </Col>
               <Col sm={12} md={6} lg={8}>
