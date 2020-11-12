@@ -24,7 +24,9 @@ export default function Home() {
                   <span className={styles.Wave}>👋</span>
                   I'm Klevin
                 </span>
-                <p>Energic and self-motivated Full Stack / MERN Developer</p>
+                <p className={styles.HeadLine}>
+                  Energic and self-motivated Full Stack / MERN Developer
+                </p>
               </Col>
             </Row>
           </Fade>
