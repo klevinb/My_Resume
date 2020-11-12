@@ -35,6 +35,9 @@
     transform-origin: 70% 70%;
     display: inline-block;
   }
+  .HeadLine {
+    font-size: 2rem !important;
+  }
 
   @keyframes wave-animation {
     0% {
@@ -88,9 +91,6 @@
     }
     .Wave {
       display: none;
-    }
-    .HeadLine {
-      font-size: 27px;
     }
   }
 }

@@ -25,7 +25,7 @@ export default function Home() {
                   I'm Klevin
                 </span>
                 <p className={styles.HeadLine}>
-                  Energic and self-motivated Full Stack / MERN Developer
+                  Energic and self-motivated Full Stack Developer
                 </p>
               </Col>
             </Row>
