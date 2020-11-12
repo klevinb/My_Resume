@@ -26,7 +26,7 @@ export default function About() {
               I'm Klevin, a web developer focused on MERN stack but always ready
               to learn new things. Eager to work in a dynamic company to
               consolidate my skills, getting my career to the next level. Ready
-              to relocate in another Country, if needed, I'm never scared by new
+              to relocate in another country if needed, I'm never scared by new
               adventures!
             </p>
           </Col>
